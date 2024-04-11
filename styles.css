@@ -1,0 +1,218 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body {
+    background-color: linen;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-size: 28px;
+}
+
+h1 {
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 0 auto;
+    animation: typing 8s steps(100, end), blink-caret .75s step-end forwards;
+    border-right: .15em solid black;
+}
+
+@keyframes typing {
+    0% { width: 0; }
+    100% { width: 100%; }
+  }
+
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: black; }
+  }
+
+.start-button {
+    text-decoration: none;
+    color: black;
+    background-color: #efeee6;
+    padding: 12px;
+    border: 1px dashed black;
+    border-radius: 8px;
+    font-size: 14px;
+    width: 140px;
+    text-align: center;
+    display: block;
+    margin: -10px auto 0;
+    position: absolute;
+    top: 62%;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    animation: fadeIn 5s 1s forwards;
+}
+
+.start-button:hover {
+    cursor: url(images/bear-cursor.png), auto;
+    background-color: #fefcfa;
+    border: solid;
+}
+
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    25% {opacity: 0.25;}
+    50% {opacity: 0.5;}
+    75% {opacity: 0.75;}
+    100% {opacity: 1;}
+}
+
+
+
+
+
+.page-1, .page-2 {
+    width: 100vw;
+    background-color: linen;
+    margin: 0;
+    padding: 0;
+}
+
+.lanzarote-drawing {
+    opacity: 0;
+    animation: fadeInPage 5s forwards;
+    position: absolute;
+    bottom: 0;
+}
+
+.standing-bear {
+    width: 200px;
+    z-index: 1;
+    position: absolute;
+    bottom: 20%;
+    right: 40%;
+    animation: fadeInPage 5s forwards;
+}
+
+@keyframes fadeInPage {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.opening-text {
+    margin: 40px;
+    width: 350px;
+}
+
+.page-1-button {
+    text-decoration: none;
+    color: black;
+    background-color: #efeee6;
+    padding: 12px;
+    border: 1px dashed black;
+    border-radius: 8px;
+    font-size: 14px;
+    width: 140px;
+    text-align: center;
+    display: block;
+    margin-left: 40px;
+    position: absolute;
+    top: 35%;
+    opacity: 0;
+    animation: fadeIn 5s 4s forwards;
+}
+
+.page-1-button:hover {
+    cursor: url(images/bear-cursor.png), auto;
+    background-color: #fefcfa;
+    border: solid;
+}
+
+
+
+
+img.background {
+    opacity: 0;
+    animation: fadeInPage 5s forwards;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+}
+
+.standing-bear-side {
+    width: 200px;
+    z-index: 1;
+    position: absolute;
+    bottom: 10%;
+    left: 25%;
+    animation: fadeInPage 5s forwards;
+}
+
+.opening-text-2 {
+    position: absolute;
+    top: 10%;
+    right: 20%;
+    width: 350px;
+    background-color: linen;
+}
+
+.exercise-1 {
+    position: absolute;
+    top: 30%;
+    right: 20%;
+    width: 350px;
+    background-color: linen;
+}
+
+.quiz {
+    display: flex;
+    position: absolute;
+    top: 40%;
+    right: 22%;
+    gap: 20px;
+}
+
+@media (max-width: 676px) {
+    .quiz {
+        right: 25%;
+    }
+}
+
+.correct-answer, button {
+    text-decoration: none;
+    color: black;
+    background-color: linen;
+    padding: 12px;
+    border: 1px dashed black;
+    border-radius: 8px;
+    font-size: 14px;
+    width: 140px;
+    text-align: center;
+    display: block;
+    opacity: 0;
+    animation: fadeIn 3s 1s forwards;
+}
+
+.correct-answer:hover {
+    cursor: url(images/bear-cursor.png), auto;
+    background-color: #fefcfa;
+    border: solid;
+}
+
+.wrong-answer:hover {
+    cursor: url(images/bear-cursor.png), auto;
+    background-color: #fefcfa;
+    border: solid;
+}
+
+#textField {
+    position: absolute;
+    top: 55%;
+    right: 22%;
+    width: 300px;
+    background-color: black;
+    color: linen;
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8">
+        <title>El Volcán</title>
+        <link rel="stylesheet" href="styles.css">
+
+        <script>
+            function displayText() {
+            let text = document.getElementById("textField");
+            text.style.display = "block";
+            }
+        </script>
+    </head>
+
+
+    <body>
+        <main>
+            <div class="page-2">
+                <div class="lanzarote-drawing-2">
+                    <img class="background" src="images/desert.jpeg" alt="A painting of the deserted landscape on Lanzarote">
+                    <img class="standing-bear-side" src="images/bear-6.png" alt="Polly standing and looking at you a little sadly">
+                <div>
+                    <p class="opening-text-2">Polly has decided to make her way to a nearby town.
+                        The landscape is a little intimidating but she's very determined!
+                        As she walks, she tries to remember a little bit about the local language.
+                    </p>
+                    <p class="exercise-1">To intrduce herself to the locals, she would say...</p>
+
+                    <div class="quiz">
+                        <a class="correct-answer" href="page-3.html">Hola, me llamo Polly.</a>
+                        <button class="wrong-answer" onclick="displayText()">¿Cómo te llamas?</button>
+                    </div>
+                    <div id="textField" style="display: none;">
+                        That's not quite right...
+                    </div>
+                </div>
+            </div>
+            </div>
+        </main>
+    </body>
+
+</html>
