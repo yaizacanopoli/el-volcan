@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8">
+        <title>El Volcán</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+
+    <body>
+        <main>
+            <div class="page-4">
+                <div class="lanzarote-drawing-4">
+                    <img class="background" src="images/vineyards.jpg" alt="A painting of vineyards on Lanzarote">
+                    <img class="sniffing-bear" src="images/bear-5.png" alt="Polly standing still, nose to the ground">
+                <div>
+                    <p class="opening-text-4">Polly managed to get some directions to a good foraging area nearby.
+                        The locals told her she could find "tomates", "uvas", "naranjas" and some more "comida buena" here.
+                    </p>
+                    <p class="exercise-3">Which of these is she going to find?</p>
+                   
+                    <form class="checkboxes">
+                        <div class="form-background">
+                        <input type="checkbox" name="items" id="tomatoes" value="tomatoes"><label>Tomatoes</label>
+                        <br>
+                        <input type="checkbox" name="items" id="lettuce" value="lettuce"><label>Lettuce</label>
+                        <br>
+                        <input type="checkbox" name="items" id="grapes" value="grapes"><label>Grapes</label>
+                        <br>
+                        <input type="checkbox" name="items" id="potatoes" value="potatoes"><label>Potatoes</label>
+                        <br>
+                        <input type="checkbox" name="items" id="oranges" value="oranges"><label>Oranges</label>
+                        <br>
+                        <input type="checkbox" name="items" id="lemons" value="lemons"><label>Lemons</label>
+                    </div>
+                    </form>
+                    <button id="try-it-side" class="side-button">Continue</button>
+
+                    <p id="textField-3"></p>
+                </div>
+            </div>
+            </div>
+        </main>
+
+        <script>
+
+            function displayText() {
+                let tomatoes = document.getElementById("tomatoes").checked;
+                let lettuce = document.getElementById("lettuce").checked;
+                let grapes = document.getElementById("grapes").checked;
+                let potatoes = document.getElementById("potatoes").checked;
+                let oranges = document.getElementById("oranges").checked;
+                let lemons = document.getElementById("lemons").checked;
+            
+                if ((tomatoes==true) &&
+                (lettuce==false) &&
+                (grapes==true) &&
+                (potatoes==false) &&
+                (oranges==true) &&
+                (lemons==false)) {
+                    location.href = "page-5.html";
+              } else {
+                    document.getElementById("textField-3").innerHTML="That's not quite right...";
+                }
+            }
+
+            document.getElementById("try-it-side").addEventListener("click", displayText);
+
+        </script>
+
+    </body>
+
+</html>

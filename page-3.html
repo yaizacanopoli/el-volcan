@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8">
+        <title>El Volcán</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+
+    <body>
+        <main>
+            <div class="page-3">
+                <div class="lanzarote-drawing-3">
+                    <img class="background" src="images/houses.jpg" alt="A painting of some houses on Lanzarote">
+                    <img class="walking-bear" src="images/bear-1.png" alt="Polly walking towards the left of the screen">
+                <div>
+                    <p class="opening-text-3">Yay, Polly has made it to a town!
+                        It's still early in the morning, so not many people are around,
+                        but a few friendly faces start looking her way.
+                        She gets ready to order a coffee to give her some energy for the rest of her journey.
+                    </p>
+                    <p class="exercise-2">Help Polly say: "I want to order a coffee."</p>
+                   
+                    <form>
+                        <textarea id="translation" name="translation" rows="3"></textarea>
+                    </form>
+                    <button id="try-it">Continue</button>
+
+                    <p id="textField-2"></p>
+                </div>
+            </div>
+            </div>
+        </main>
+
+        <script>
+
+            function displayText() {
+                let text = document.getElementById("translation").value;
+            
+                if (text=="Quiero pedir un café.") {
+                    location.href = "page-4.html";
+              } else {
+                    document.getElementById("textField-2").innerHTML="That's not quite right...";
+                }
+            }
+
+            document.getElementById("try-it").addEventListener("click", displayText);
+
+        </script>
+
+    </body>
+
+</html>

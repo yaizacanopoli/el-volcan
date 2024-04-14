@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8">
+        <title>El Volcán</title>
+        <link rel="stylesheet" href="styles.css">
+
+        <script>
+
+            function nextPage(event) {
+                event.preventDefault();
+                location.href = "page-6.html";
+              }
+
+        </script>
+
+    </head>
+
+
+    <body>
+        <main>
+            <div class="page-5">
+                <div class="lanzarote-drawing-5">
+                    <img class="background" src="images/beach.jpg" alt="A painting of a Lanzarote beach">
+                    <img class="sitting-bear" src="images/bear-3.png" alt="Polly sitting down, looking at you">
+                <div>
+                    <p class="opening-text-5">Polly is at the beach!
+                        She's taking a little break from all the exploring, and admiring the view.
+                        Her time on Lanzarote has been nice, but she's starting to miss home a little.
+                    </p>
+                    <p class="exercise-4">Can you share some encouraging words to cheer her up?</p>
+                   
+                    <form onsubmit="nextPage(event)">
+                        <textarea id="translation-2" name="translation" rows="3" minlength="20" required></textarea>
+                        <input type="submit" id="try-it-input" value="Continue">
+                    </form>
+                </div>
+            </div>
+            </div>
+        </main>
+
+    </body>
+
+</html>
