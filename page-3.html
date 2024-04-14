@@ -35,22 +35,11 @@
             </div>
         </main>
 
+        <script src="script.js"></script>
         <script>
-
-            function displayText() {
-                let text = document.getElementById("translation").value;
-            
-                if (text=="Quiero pedir un café.") {
-                    location.href = "page-4.html";
-              } else {
-                    document.getElementById("textField-2").innerHTML="That's not quite right...";
-                }
-            }
-
-            document.getElementById("try-it").addEventListener("click", displayText);
-
+            document.getElementById("try-it").addEventListener("click", displayText2);
         </script>
-
+        
     </body>
 
 </html>

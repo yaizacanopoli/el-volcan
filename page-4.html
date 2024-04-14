@@ -45,32 +45,10 @@
             </div>
         </main>
 
+        <script src="script.js"></script>
         <script>
-
-            function displayText() {
-                let tomatoes = document.getElementById("tomatoes").checked;
-                let lettuce = document.getElementById("lettuce").checked;
-                let grapes = document.getElementById("grapes").checked;
-                let potatoes = document.getElementById("potatoes").checked;
-                let oranges = document.getElementById("oranges").checked;
-                let lemons = document.getElementById("lemons").checked;
-            
-                if ((tomatoes==true) &&
-                (lettuce==false) &&
-                (grapes==true) &&
-                (potatoes==false) &&
-                (oranges==true) &&
-                (lemons==false)) {
-                    location.href = "page-5.html";
-              } else {
-                    document.getElementById("textField-3").innerHTML="That's not quite right...";
-                }
-            }
-
-            document.getElementById("try-it-side").addEventListener("click", displayText);
-
+            document.getElementById("try-it-side").addEventListener("click", displayText3);
         </script>
-
     </body>
 
 </html>
