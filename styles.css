@@ -15,6 +15,7 @@ body {
     align-items: center;
     height: 100vh;
     font-size: 28px;
+    margin-top: -10%;
 }
 
 h1 {
@@ -22,7 +23,7 @@ h1 {
     overflow: hidden;
     white-space: nowrap;
     margin: 0 auto;
-    animation: typing 8s steps(100, end), blink-caret .75s step-end forwards;
+    animation: typing 4s steps(40, end), blink-caret 2.3s step-end forwards;
     border-right: .15em solid black;
 }
 
@@ -32,9 +33,18 @@ h1 {
   }
 
   @keyframes blink-caret {
-    from, to { border-color: transparent }
+    0% { border-color: transparent }
+    10% { border-color: black; }
+    20% { border-color: transparent }
+    30% { border-color: black; }
+    40% { border-color: transparent }
     50% { border-color: black; }
-  }
+    60% { border-color: transparent; }
+    70% { border-color: black; }
+    80% { border-color: transparent; }
+    90% { border-color: black; }
+    100% { border-color: transparent; }
+}
 
 .start-button {
     text-decoration: none;
@@ -49,7 +59,7 @@ h1 {
     display: block;
     margin: -10px auto 0;
     position: absolute;
-    top: 62%;
+    top: 60%;
     left: 0;
     right: 0;
     opacity: 0;
@@ -85,7 +95,6 @@ h1 {
     opacity: 0;
     animation: fadeInPage 5s forwards;
     position: absolute;
-    bottom: 0;
 }
 
 .standing-bear {
@@ -102,8 +111,13 @@ h1 {
     100% { opacity: 1; }
 }
 
-.opening-text {
-    margin: 40px;
+p.opening-text {
+    margin: 60px 40px 30px;
+    width: 350px;
+}
+
+p.opening-text-polly {
+    margin: 0 40px 40px;
     width: 350px;
 }
 
@@ -120,9 +134,27 @@ h1 {
     display: block;
     margin-left: 40px;
     position: absolute;
-    top: 35%;
+    top: 40%;
     opacity: 0;
     animation: fadeIn 5s 4s forwards;
+}
+
+@media (max-width: 400px) {
+    p.opening-text {
+        margin-bottom: 25px;
+        width: 350px;
+    }
+
+    p.opening-text, p.opening-text-polly {
+        width: 270px;
+        left: 10%;
+    }
+
+    .page-1-button {
+        font-size: 12px;
+        width: 130px;
+        top: 43%;
+    }
 }
 
 .page-1-button:hover {
@@ -211,6 +243,39 @@ img.background {
     color: linen;
 }
 
+@media (max-width: 400px) {
+    .opening-text-2 {
+        top: 10%;
+        width: 250px;
+        left: 10%;
+        background-color: linen;
+    }
+
+    .exercise-1 {
+        width: 250px;
+        top: 37%;
+        left: 10%;
+    }
+
+    .quiz {
+        left: 10%;
+        top: 47%;
+        gap: 15px;
+        width: 250px;
+    }
+
+    .quiz a, .quiz button {
+        font-size: 12px;
+    }
+
+    #textField {
+        position: absolute;
+        top: 59%;
+        left: 10%;
+        width: 250px;
+    }
+}
+
 
 
 
@@ -254,6 +319,7 @@ button#try-it {
     position: absolute;
     top: 55%;
     right: 20%;
+    z-index: 2;
 }
 
 #textField-2 {
@@ -263,6 +329,40 @@ button#try-it {
     width: 300px;
     background-color: black;
     color: linen;
+    z-index: 2;
+}
+
+@media (max-width: 400px) {
+    .opening-text-3 {
+        top: 10%;
+        width: 270px;
+        left: 10%;
+        background-color: linen;
+    }
+
+    .exercise-2 {
+        width: 270px;
+        top: 38%;
+        left: 10%;
+    }
+
+    textarea {
+        left: 10%;
+        top: 46%;
+        width: 270px;
+    }
+
+    button#try-it {
+        position: absolute;
+        top: 56%;
+        left: 10%;
+    }
+
+    #textField-2 {
+        top: 65%;
+        left: 10%;
+        width: 250px;
+    }
 }
 
 
@@ -323,6 +423,41 @@ button#try-it-side {
     width: 300px;
     background-color: black;
     color: linen;
+    z-index: 1;
+}
+
+@media (max-width: 400px) {
+    .opening-text-4 {
+        top: 10%;
+        width: 270px;
+        left: 10%;
+        background-color: linen;
+    }
+
+    .exercise-3 {
+        width: 270px;
+        top: 33%;
+        left: 10%;
+    }
+
+    form.checkboxes {
+        left: 10%;
+        top: 42%;
+        width: 270px;
+    }
+
+    button#try-it-side {
+        position: absolute;
+        top: 42%;
+        right: 19%;
+        width: 120px;
+    }
+
+    #textField-3 {
+        top: 66%;
+        left: 10%;
+        width: 250px;
+    }
 }
 
 
@@ -361,6 +496,34 @@ input[id="try-it-input"] {
     position: absolute;
     top: 54%;
     right: 20%;
+    z-index: 1;
+}
+
+@media (max-width: 400px) {
+    .opening-text-5 {
+        top: 10%;
+        width: 270px;
+        left: 10%;
+        background-color: linen;
+    }
+
+    .exercise-4 {
+        width: 270px;
+        top: 32%;
+        left: 10%;
+    }
+
+    textarea#translation-2 {
+        left: 10%;
+        top: 43%;
+        width: 270px;
+    }
+
+    input[id="try-it-input"] {
+        position: absolute;
+        top: 52.5%;
+        left: 10%;
+    }
 }
 
 
@@ -397,6 +560,27 @@ input[id="try-it-input"] {
     position: absolute;
     top: 46%;
     right: 20%;
+}
+
+@media (max-width: 400px) {
+    .opening-text-6 {
+        top: 10%;
+        width: 270px;
+        left: 10%;
+        background-color: linen;
+    }
+
+    .exercise-5 {
+        width: 270px;
+        top: 32%;
+        left: 10%;
+    }
+
+    .page-6-button {
+        position: absolute;
+        top: 40%;
+        left: 10%;
+    }
 }
 
 
