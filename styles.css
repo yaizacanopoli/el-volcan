@@ -7,6 +7,7 @@
 
 body {
     background-color: linen;
+    overflow: hidden;
 }
 
 main.index-main {
@@ -123,8 +124,8 @@ div.text-div p {
     background-color: linen;
 }
 
-p.opening-text {
-    margin-bottom: 5%;
+p.opening-text, p.opening-text-2 {
+    margin-bottom: 6%;
 }
 
 .page-1-button {
@@ -168,34 +169,9 @@ img.background {
     animation: fadeInPage 5s forwards;
 }
 
-.opening-text-2 {
-    position: absolute;
-    top: 10%;
-    right: 20%;
-    width: 350px;
-    background-color: linen;
-}
-
-.exercise-1 {
-    position: absolute;
-    top: 30%;
-    right: 20%;
-    width: 350px;
-    background-color: linen;
-}
-
 .quiz {
     display: flex;
-    position: absolute;
-    top: 40%;
-    right: 22%;
-    gap: 20px;
-}
-
-@media (max-width: 676px) {
-    .quiz {
-        right: 25%;
-    }
+    gap: 5%;
 }
 
 .correct-answer, button, input[id="try-it-input"], .page-6-button, .page-7-button {
@@ -205,7 +181,7 @@ img.background {
     padding: 12px;
     border: 1px dashed black;
     border-radius: 8px;
-    font-size: 14px;
+    font-size: 12px;
     width: 140px;
     text-align: center;
     display: block;
@@ -220,45 +196,8 @@ img.background {
 }
 
 #textField {
-    position: absolute;
-    top: 55%;
-    right: 22%;
-    width: 300px;
     background-color: black;
     color: linen;
-}
-
-@media (max-width: 400px) {
-    .opening-text-2 {
-        top: 10%;
-        width: 250px;
-        left: 10%;
-        background-color: linen;
-    }
-
-    .exercise-1 {
-        width: 250px;
-        top: 37%;
-        left: 10%;
-    }
-
-    .quiz {
-        left: 10%;
-        top: 47%;
-        gap: 15px;
-        width: 250px;
-    }
-
-    .quiz a, .quiz button {
-        font-size: 12px;
-    }
-
-    #textField {
-        position: absolute;
-        top: 59%;
-        left: 10%;
-        width: 250px;
-    }
 }
 
 
