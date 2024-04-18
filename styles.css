@@ -125,7 +125,7 @@ div.text-div-2 {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    gap: 5%;
+    gap: 3%;
     z-index: 99;
     position: absolute;
     top: 10%;
@@ -197,6 +197,7 @@ img.background {
 .quiz {
     display: flex;
     gap: 5%;
+    width: 280px;
 }
 
 .correct-answer, button, input[id="try-it-input"], .page-6-button, .page-7-button {
@@ -222,6 +223,7 @@ img.background {
 #textField, #textField-2 {
     background-color: black;
     color: linen;
+    width: 280px;
 }
 
 #textField-3 {
